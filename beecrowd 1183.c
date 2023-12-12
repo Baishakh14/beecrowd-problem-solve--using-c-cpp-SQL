@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+ float x[12][12],s = 0;
+ int i,j;
+ char a;
+ scanf("%c",&a);
+ for(i = 0;i<12;i++)
+ {
+     for(j = 0;j<12;j++)
+     {
+         scanf("%f",&x[i][j]);
+     }
+ }
+  for(i = 0;i<12;i++)
+  {
+      for(j = 11;j>i;j--)
+      {
+          s = s + x[i][j];
+      }
+  }
+  if(a == 'S') printf("%.1f\n",s);
+  else if(a == 'M') printf("%.1f\n",s/66.0);
+    return 0;
+}
+
