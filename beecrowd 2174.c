@@ -12,10 +12,10 @@ int main()
     }
     for(int i = 0;i<n;i++)
     {
-    int c = 1;
+    int c = 1;  ///for count the unique pokemon
         for(int j = i+1;j<n;j++){
                 if(strcmp(a[i],a[j])==0){
-                c = 0;
+                c = 0; /// if matched c = 0 else c = 1
                 break;
                 }
         }
