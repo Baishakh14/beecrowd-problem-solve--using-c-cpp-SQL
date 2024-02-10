@@ -24,7 +24,7 @@ int main()
              }
          }
      }
-     t = abs(x-x1)+abs(y-y1);
+     t = abs(x-x1)+abs(y-y1); /// find the positon from current poaition - destination position with raw and column
      printf("%d\n",t);
  }
     return 0;
