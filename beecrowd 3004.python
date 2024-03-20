@@ -1,0 +1,11 @@
+def main():
+    n = int(input())
+    for _ in range(n):
+        a, b, c, d = map(int, input().split())
+        if (a < c and b < d) or (a < d and b < c):
+            print("S")
+        else:
+            print("N")
+
+if __name__ == "__main__":
+    main()
