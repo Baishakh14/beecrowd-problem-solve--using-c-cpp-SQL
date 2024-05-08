@@ -1,0 +1,55 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>vv,vd;
+    vector<int> :: iterator it;
+    int a,b;
+    cin>>a>>b;
+    for(int i = 0;i<a;i++)
+    {
+        for(int j = 0;j<b;j++)
+        {
+           int ab;
+           char ba;
+           cin>>ab>>ba;
+           if(ba == 'V')
+           {
+            vv.push_back(ab);
+           }
+           else if(ba == 'D')
+           {
+            vd.push_back(ab);
+           }
+        }
+    }
+    sort(vv.begin(),vv.end(),greater<int>());
+    sort(vd.begin(),vd.end(),greater<int>());
+    // int mn = vv.size();
+    // int nm = vd.size();
+    // for(int i = 0; i <vv.size();i++)
+    // {
+    //     cout<<vv[i]<<"V"<<endl;
+    // }
+    // for(int i = 0;i<vd.size();i++)
+    // {
+    //     cout<<vd[i]<<"D"<<endl;
+    // }
+    for(it = vv.begin(); it != vv.end();it++)
+    {
+        cout<<*it<<"V"<<endl;
+    }
+    for(it = vd.begin(); it != vd.end();it++)
+    {
+        cout<<*it<<"D"<<endl;
+    }
+    // for(auto it : vv)
+    // {
+    //     cout<<it<<"V"<<endl;
+    // }
+    // for(auto it : vd)
+    // {
+    //     cout<<it<<"D"<<endl;
+    // }
+    return 0;
+}
